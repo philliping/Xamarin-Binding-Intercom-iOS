@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D43BA872-556C-40AC-8853-496D9C59E910}</ProjectGuid>
+    <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Intercom.iOS</RootNamespace>
+    <AssemblyName>Intercom.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="libIntercom.linkwith.cs">
+      <DependentUpon>libIntercom.a</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="Structs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Intercom.bundle\certs\intercom.icmcer" />
+    <BundleResource Include="Resources\Intercom.bundle\images\back.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\back%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\back%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\chat_bubble.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\chat_bubble%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\chat_bubble%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close_intercom.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close_intercom%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close_intercom%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close_note.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close_note%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close_note%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close_post.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close_post%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\close_post%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\intercom_logo.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\intercom_logo%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\intercom_logo%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\launcher.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\launcher%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\launcher%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\linkedin.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\linkedin%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\linkedin%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\message_failed.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\message_failed%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\message_failed%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\open_post_from_card.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\open_post_from_card%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\open_post_from_card%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\spinner.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\spinner%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\spinner%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\twitter.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\twitter%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\twitter%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\upload_icon.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\upload_icon%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\upload_icon%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\user_participated.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\user_participated%402x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\images\user_participated%403x.png" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\ar.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\bg.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\bs.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\ca.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\cs.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\da.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\de-form.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\de.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\el.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\en.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\es.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\et.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\fi.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\fr.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\he.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\hr.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\hu.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\id.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\it.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\ja.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\ko.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\lt.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\lv.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\mn.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\nb.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\nl.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\pl.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\pt-br.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\pt-pt.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\ro.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\ru.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\sl.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\sr.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\sv.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\tr.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\vi.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\zh-hans.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\locales\zh-hant.strings" />
+    <BundleResource Include="Resources\Intercom.bundle\sound\admin_reply_delivered.caf" />
+    <BundleResource Include="Resources\Intercom.bundle\sound\message_delivered.caf" />
+    <BundleResource Include="Resources\Intercom.bundle\sound\message_failed.caf" />
+    <BundleResource Include="Resources\Intercom.bundle\sound\message_sending.caf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="libIntercom.a" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+</Project>
