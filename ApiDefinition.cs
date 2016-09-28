@@ -1,11 +1,11 @@
 ﻿using System;
-using Intercom;
+using IntercomiOS;
 using UIKit;
 using Foundation;
 using ObjCRuntime;
 using CoreGraphics;
 
-namespace Intercom.iOS
+namespace IntercomiOS
 {
 	[BaseType(typeof(NSObject))]
 	interface Intercom

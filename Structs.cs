@@ -1,7 +1,7 @@
 ﻿using System;
 using ObjCRuntime;
 
-namespace Intercom.iOS
+namespace IntercomiOS
 {
 	[Native]
 	public enum ICMPreviewPosition : long
