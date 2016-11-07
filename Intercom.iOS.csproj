@@ -134,7 +134,7 @@
     <BundleResource Include="Resources\Intercom.bundle\sound\message_sending.caf" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="..\..\Desktop\intercom2\Binding\Intercom.framework">
+    <NativeReference Include="Intercom.framework">
       <Kind>Framework</Kind>
       <ForceLoad>True</ForceLoad>
       <Frameworks>AudioToolbox AssetsLibrary Foundation ImageIO SystemConfiguration MobileCoreServices CoreLocation UIKit CoreGraphics CoreText QuartzCore MessageUI UIKit Photos Accelerate</Frameworks>
